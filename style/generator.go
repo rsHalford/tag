@@ -5,6 +5,7 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/jdxyw/generativeart"
 	"github.com/rsHalford/tag/config"
@@ -54,13 +55,17 @@ func Generator(wg *sync.WaitGroup, s, th string) {
 		fmt.Printf("%s is not a supported style\n", s)
 	}
 
+	now := time.Now()
+	unix := now.Unix()
+	time := strconv.FormatInt(unix, 10)
+
 	if config.Value("general_directory") != "" {
 		saveDir := strings.TrimSuffix(config.Value("general_directory"), "/")
-		saveLocation := saveDir + "/" + th + "_" + s + ".png"
+		saveLocation := saveDir + "/" + th + "_" + s + "-" + time + ".png"
 
 		c.ToPNG(saveLocation)
 
 	} else {
-		c.ToPNG(th + "_" + s + ".png")
+		c.ToPNG(th + "_" + s + "-" + time + ".png")
 	}
 }
