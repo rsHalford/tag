@@ -13,6 +13,12 @@ func Select(theme string) (color.RGBA, []color.RGBA) {
 
 		return base, schema
 
+	case "gruvbox_light":
+		base := GRUVBOX_LIGHT_BASE
+		schema := GRUVBOX_LIGHT_COLORS
+
+		return base, schema
+
 	case "rose_pine":
 		base := ROSE_PINE_BASE
 		schema := ROSE_PINE_COLORS
