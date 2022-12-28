@@ -31,7 +31,7 @@ var (
 	themeOpt string
 )
 
-// generateCmd represents the edit command.
+// generateCmd represents the generate command.
 var generateCmd = &cobra.Command{
 	Use:     "generate",
 	Aliases: []string{"gen", "g"},
