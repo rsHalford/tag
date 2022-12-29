@@ -53,7 +53,8 @@ one_dark
 rose_pine
 rose_pine_moon
 rose_pine_dawn
-solarized_dark`
+solarized_dark
+solarized_light`
 
 	switch args[0] {
 	case "styles":
