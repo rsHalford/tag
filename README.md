@@ -21,6 +21,7 @@ Available Commands:
   completion  Generate the autocompletion script for the specified shell
   generate    Create a new generative artwork
   help        Help about any command
+  list        List all themes
 
 Flags:
   -h, --help      help for tag
@@ -28,8 +29,6 @@ Flags:
 
 Use "tag [command] --help" for more information about a command.
 ```
-
-Go get things done and checked off the list.
 
 ---
 
