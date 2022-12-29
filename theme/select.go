@@ -19,6 +19,12 @@ func Select(theme string) (color.RGBA, []color.RGBA) {
 
 		return base, schema
 
+	case "catppuccin_macchiato":
+		base := CATPPUCCIN_MACCHIATO_BASE
+		schema := CATPPUCCIN_MACCHIATO_COLORS
+
+		return base, schema
+
 	case "gruvbox_dark":
 		base := GRUVBOX_DARK_BASE
 		schema := GRUVBOX_DARK_COLORS

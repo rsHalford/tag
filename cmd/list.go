@@ -34,6 +34,7 @@ func listRun(cmd *cobra.Command, args []string) error {
 
 	themes := `catppuccin_frappe
 catppuccin_latte
+catppuccin_macchiato
 gruvbox_dark
 gruvbox_dark_hard
 gruvbox_dark_soft
