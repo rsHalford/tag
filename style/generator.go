@@ -31,6 +31,10 @@ func Generator(wg *sync.WaitGroup, s, th string) {
 	time := strconv.FormatInt(unix, 10)
 
 	switch s {
+	case "circle_grid":
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
+		CircleGrid(c)
+
 	case "color_circle":
 		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		ColorCircle(c)

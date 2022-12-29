@@ -32,7 +32,8 @@ var listCmd = &cobra.Command{
 
 func listRun(cmd *cobra.Command, args []string) error {
 
-	styles := `color_circle
+	styles := `circle_grid
+color_circle
 color_circle_2
 contour_line
 maze
