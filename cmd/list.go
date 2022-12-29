@@ -49,6 +49,7 @@ gruvbox_dark_soft
 gruvbox_light
 gruvbox_light_hard
 gruvbox_light_soft
+one_dark
 rose_pine
 rose_pine_moon
 rose_pine_dawn`

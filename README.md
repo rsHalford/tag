@@ -36,6 +36,7 @@ Use "tag [command] --help" for more information about a command.
 
 - [Catppuccin](https://github.com/catppuccin/catppuccin)
 - [Gruvbox](https://github.com/morhetz/gruvbox)
+- [One Dark](https://github.com/one-dark/vscode-one-dark-theme)
 - [Rose-Pine](https://github.com/rose-pine/rose-pine-theme)
 
 ---
