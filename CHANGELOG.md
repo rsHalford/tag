@@ -1,9 +1,34 @@
 # CHANGELOG
 
-<a name="0.2.0"></a>
-## [0.2.0](https://github.com/rsHalford/tag/compare/v0.1.0...0.2.0)
+<a name="0.3.0"></a>
+## [0.3.0](https://github.com/rsHalford/tag/compare/v0.2.0...0.3.0)
+
+> 2022-12-29
+
+### Chores
+
+* **docs:** add list command to example help message
+
+### Features
+
+* appends timestamp to filename to preserve unique generations
+
+### Theme
+
+* catppuccin mocha
+* catppuccin macchiato
+* catppuccin frappe
+* catppuccin latte
+
+
+<a name="v0.2.0"></a>
+## [v0.2.0](https://github.com/rsHalford/tag/compare/v0.1.0...v0.2.0)
 
 > 2022-12-28
+
+### Chores
+
+* **version:** update for v0.2.0
 
 ### Features
 
