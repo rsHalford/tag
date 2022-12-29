@@ -52,7 +52,8 @@ gruvbox_light_soft
 one_dark
 rose_pine
 rose_pine_moon
-rose_pine_dawn`
+rose_pine_dawn
+solarized_dark`
 
 	switch args[0] {
 	case "styles":

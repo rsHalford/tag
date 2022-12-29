@@ -91,6 +91,12 @@ func Select(theme string) (color.RGBA, []color.RGBA) {
 
 		return base, schema
 
+	case "solarized_dark":
+		base := SOLARIZED_DARK_BASE
+		schema := SOLARIZED_DARK_COLORS
+
+		return base, schema
+
 	default:
 		base := ROSE_PINE_BASE
 		schema := ROSE_PINE_COLORS
