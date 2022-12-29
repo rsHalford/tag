@@ -1,5 +1,5 @@
 /*
-Lists all themes available for artwork generation.
+Lists all themes and styles available for artwork generation.
 
 Usage:
 
@@ -25,12 +25,19 @@ import (
 var listCmd = &cobra.Command{
 	Use:     "list",
 	Aliases: []string{"ls", "l"},
-	Short:   "List all themes",
-	Long:    `Lists all themes available for artwork generation.`,
+	Short:   "List all themes and styles",
+	Long:    `Lists all themes and styles available for artwork generation.`,
 	RunE:    listRun,
 }
 
 func listRun(cmd *cobra.Command, args []string) error {
+
+	styles := `color_circle
+color_circle_2
+contour_line
+maze
+noise_line
+random_shape`
 
 	themes := `catppuccin_frappe
 catppuccin_latte
@@ -46,9 +53,19 @@ rose_pine
 rose_pine_moon
 rose_pine_dawn`
 
-	fmt.Println(themes)
+	switch args[0] {
+	case "styles":
+		fmt.Println(styles)
+		return nil
 
-	return nil
+	case "themes":
+		fmt.Println(themes)
+		return nil
+
+	default:
+		return fmt.Errorf("please provide a valid argument for the list command")
+	}
+
 }
 
 func init() {
