@@ -1,13 +1,41 @@
 # CHANGELOG
 
-<a name="0.3.0"></a>
-## [0.3.0](https://github.com/rsHalford/tag/compare/v0.2.0...0.3.0)
+<a name="0.4.0"></a>
+## [0.4.0](https://github.com/rsHalford/tag/compare/v0.3.0...0.4.0)
+
+> 2022-12-29
+
+### Bug Fixes
+
+* handle errors in width and height arguments, defaulting to 500 pixels
+* print the correct filename when generating images
+
+### Chores
+
+* **docs:** list current themes
+
+### Features
+
+* list command to have a 'styles' argument to list available styles
+* **style:** dots wave
+* **style:** circle_grid
+
+### Theme
+
+* solarized light
+* solarized dark
+* one dark
+
+
+<a name="v0.3.0"></a>
+## [v0.3.0](https://github.com/rsHalford/tag/compare/v0.2.0...v0.3.0)
 
 > 2022-12-29
 
 ### Chores
 
 * **docs:** add list command to example help message
+* **version:** update for v0.3.0
 
 ### Features
 

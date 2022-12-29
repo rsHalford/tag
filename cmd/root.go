@@ -11,7 +11,7 @@ var rootCmd = &cobra.Command{
 	Use:     "tag",
 	Short:   "tag generates art with themes",
 	Long:    "tag generates artwork from your favourite terminal themes.",
-	Version: "0.3.0",
+	Version: "0.4.0",
 }
 
 // Execute adds all child commands to the root command and sets flags
