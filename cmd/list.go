@@ -36,6 +36,7 @@ func listRun(cmd *cobra.Command, args []string) error {
 color_circle
 color_circle_2
 contour_line
+dots_wave
 maze
 noise_line
 random_shape`

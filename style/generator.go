@@ -47,6 +47,10 @@ func Generator(wg *sync.WaitGroup, s, th string) {
 		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		ContourLine(c)
 
+	case "dots_wave":
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
+		DotsWave(c)
+
 	case "maze":
 		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		Maze(c, schema)
