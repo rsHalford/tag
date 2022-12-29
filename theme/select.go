@@ -7,6 +7,12 @@ import (
 func Select(theme string) (color.RGBA, []color.RGBA) {
 
 	switch theme {
+	case "catppuccin_latte":
+		base := CATPPUCCIN_LATTE_BASE
+		schema := CATPPUCCIN_LATTE_COLORS
+
+		return base, schema
+
 	case "gruvbox_dark":
 		base := GRUVBOX_DARK_BASE
 		schema := GRUVBOX_DARK_COLORS
