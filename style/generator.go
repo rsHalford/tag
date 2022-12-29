@@ -26,38 +26,38 @@ func Generator(wg *sync.WaitGroup, s, th string) {
 	c.FillBackground()
 	c.SetColorSchema(schema)
 
+	now := time.Now()
+	unix := now.Unix()
+	time := strconv.FormatInt(unix, 10)
+
 	switch s {
 	case "color_circle":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		ColorCircle(c)
 
 	case "color_circle_2":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		ColorCircle2(c)
 
 	case "contour_line":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		ContourLine(c)
 
 	case "maze":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		Maze(c, schema)
 
 	case "noise_line":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		NoiseLine(c)
 
 	case "random_shape":
-		fmt.Printf("Generating %s_%s.png...\n", th, s)
+		fmt.Printf("Generating %s_%s-%s.png...\n", th, s, time)
 		RandomShape(c)
 
 	default:
 		fmt.Printf("%s is not a supported style\n", s)
 	}
-
-	now := time.Now()
-	unix := now.Unix()
-	time := strconv.FormatInt(unix, 10)
 
 	if config.Value("general_directory") != "" {
 		saveDir := strings.TrimSuffix(config.Value("general_directory"), "/")
