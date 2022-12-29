@@ -15,8 +15,17 @@ import (
 func Generator(wg *sync.WaitGroup, s, th string) {
 	defer wg.Done()
 
-	width, _ := strconv.Atoi(config.Value("canvas_width"))
-	height, _ := strconv.Atoi(config.Value("canvas_height"))
+	width, err := strconv.Atoi(config.Value("canvas_width"))
+	if err != nil || width < 1 {
+		fmt.Println("defaulting to a 500 pixel width")
+		width = 500
+	}
+
+	height, err := strconv.Atoi(config.Value("canvas_height"))
+	if err != nil || height < 1 {
+		fmt.Println("defaulting to a 500 pixel height")
+		height = 500
+	}
 
 	c := generativeart.NewCanva(width, height)
 
