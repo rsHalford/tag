@@ -32,6 +32,14 @@ Use "tag [command] --help" for more information about a command.
 
 ---
 
+# Themes
+
+- [Catppuccin](https://github.com/catppuccin/catppuccin)
+- [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Rose-Pine](https://github.com/rose-pine/rose-pine-theme)
+
+---
+
 # Getting Started
 
 ## Requirements
