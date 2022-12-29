@@ -32,7 +32,8 @@ var listCmd = &cobra.Command{
 
 func listRun(cmd *cobra.Command, args []string) error {
 
-	themes := `catppuccin_latte
+	themes := `catppuccin_frappe
+catppuccin_latte
 gruvbox_dark
 gruvbox_dark_hard
 gruvbox_dark_soft
