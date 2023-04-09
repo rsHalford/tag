@@ -1,7 +1,23 @@
 # CHANGELOG
 
-<a name="0.4.0"></a>
-## [0.4.0](https://github.com/rsHalford/tag/compare/v0.3.0...0.4.0)
+<a name="v0.4.1"></a>
+## [v0.4.1](https://github.com/rsHalford/tag/compare/v0.4.0...0.4.1)
+
+> 2023-04-09
+
+### Chores
+
+* **docs:** add tokyo night to README
+
+### Theme
+
+* tokyo night
+* tokyo night storm
+* tokyo night light
+
+
+<a name="v0.4.0"></a>
+## [v0.4.0](https://github.com/rsHalford/tag/compare/v0.3.0...v0.4.0)
 
 > 2022-12-29
 
@@ -13,6 +29,7 @@
 ### Chores
 
 * **docs:** list current themes
+* **version:** update for v0.4.0
 
 ### Features
 
