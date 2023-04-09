@@ -103,6 +103,24 @@ func Select(theme string) (color.RGBA, []color.RGBA) {
 
 		return base, schema
 
+	case "tokyo_night":
+		base := TOKYO_NIGHT_BASE
+		schema := TOKYO_NIGHT_COLORS
+
+		return base, schema
+
+	case "tokyo_night_storm":
+		base := TOKYO_NIGHT_STORM_BASE
+		schema := TOKYO_NIGHT_STORM_COLORS
+
+		return base, schema
+
+	case "tokyo_night_light":
+		base := TOKYO_NIGHT_LIGHT_BASE
+		schema := TOKYO_NIGHT_COLORS
+
+		return base, schema
+
 	default:
 		base := ROSE_PINE_BASE
 		schema := ROSE_PINE_COLORS

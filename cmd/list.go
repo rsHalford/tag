@@ -32,7 +32,10 @@ var listCmd = &cobra.Command{
 
 func listRun(cmd *cobra.Command, args []string) error {
 
-	styles := `circle_grid
+	if len(args) < 1 {
+		return fmt.Errorf("please provide an argument or 'themes' of 'styles'.")
+	} else {
+		styles := `circle_grid
 color_circle
 color_circle_2
 contour_line
@@ -41,7 +44,7 @@ maze
 noise_line
 random_shape`
 
-	themes := `catppuccin_frappe
+		themes := `catppuccin_frappe
 catppuccin_latte
 catppuccin_macchiato
 catppuccin_mocha
@@ -56,21 +59,23 @@ rose_pine
 rose_pine_moon
 rose_pine_dawn
 solarized_dark
-solarized_light`
+solarized_light
+tokyo_night
+tokyo_night_storm
+tokyo_night_light`
 
-	switch args[0] {
-	case "styles":
-		fmt.Println(styles)
-		return nil
+		list := args[0]
 
-	case "themes":
-		fmt.Println(themes)
-		return nil
-
-	default:
-		return fmt.Errorf("please provide a valid argument for the list command")
+		if list == "styles" {
+			fmt.Println(styles)
+			return nil
+		} else if list == "themes" {
+			fmt.Println(themes)
+			return nil
+		} else {
+			return fmt.Errorf("please provide a valid argument for the list command")
+		}
 	}
-
 }
 
 func init() {

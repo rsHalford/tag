@@ -68,7 +68,7 @@ func createCfgFile(cfgFile string) error {
 		defer f.Close()
 
 		// The file is created with boilerplate for configuration options.
-		configBoilerplate := fmt.Sprintf(`[general]
+		configBoilerplate := fmt.Sprintln(`[general]
 # location to save generated artwork (defaults to current working directory if unset)
 directory = "" # $TAG_GENERAL_DIRECTORY
 
