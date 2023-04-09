@@ -21,7 +21,7 @@ Available Commands:
   completion  Generate the autocompletion script for the specified shell
   generate    Create a new generative artwork
   help        Help about any command
-  list        List all themes
+  list        List all themes and styles
 
 Flags:
   -h, --help      help for tag
@@ -39,6 +39,7 @@ Use "tag [command] --help" for more information about a command.
 - [One Dark](https://github.com/one-dark/vscode-one-dark-theme)
 - [Rose-Pine](https://github.com/rose-pine/rose-pine-theme)
 - [Solarized](https://ethanschoonover.com/solarized)
+- [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme)
 
 ---
 
